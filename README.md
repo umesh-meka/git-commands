@@ -65,3 +65,34 @@ If your Git version supports it, you can also use:
 | Create & switch branch                      | Creates a branch from the current branch and switches to it | `git switch -c <new-branch-name>` |
 | Switch to an existing branch                | Switches from the current branch to an existing branch                                | `git switch <existing-branch-name>`                 |
 
+<br>
+git fetch (vs) git pull
+
+🔹 git fetch
+
+Downloads new commits, branches, and tags from the remote
+Does NOT modify your working directory
+
+Example:
+git fetch origin
+
+After this:
+Your branch stays the same
+
+🔹 git pull
+
+Fetches changes AND immediately merges (or rebases) them into your current branch
+Your working directory is updated
+
+Example:
+git pull origin main
+
+This is equivalent to:
+
+git fetch origin
+git merge origin/main
+
+⚠️ Key Difference (One-Line Summary)
+Command	Downloads changes	Updates local branch	Risk
+git fetch	✅ Yes	❌ No	Very safe
+git pull	✅ Yes	✅ Yes	Can cause conflicts
