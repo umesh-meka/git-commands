@@ -57,3 +57,10 @@ git checkout feature-login
 | Create a new branch without switching                     | Creates a branch from a specified source branch without switching              | `git branch <new-branch-name> <source-branch-name>`      |
 | Create a new branch without switching (already on source) | Creates a branch from the current branch without switching                     | `git branch <new-branch-name>`                           |
 | Switch to an existing branch                              | Switches from the current branch to an existing branch                         | `git checkout <existing-branch-name>`                    |
+
+
+If your Git version supports it, you can also use:
+
+Use Case	Command
+Create & switch branch	git switch -c <new-branch-name>
+Switch branch	git switch <existing-branch-name>
