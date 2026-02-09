@@ -60,7 +60,8 @@ git checkout feature-login
 
 
 If your Git version supports it, you can also use:
+| **Use Case**                                              | **Description**                                                                | **Command**                                              |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| Create & switch branch                      | Creates a branch from the current branch and switches to it | `git switch -c <new-branch-name>` |
+| Switch to an existing branch                | Switches from the current branch to an existing branch                                | `git switch <existing-branch-name>`                 |
 
-Use Case	Command
-Create & switch branch	git switch -c <new-branch-name>
-Switch branch	git switch <existing-branch-name>
